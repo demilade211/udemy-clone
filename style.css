@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sf pro text,-apple-system,
+    BlinkMacSystemFont,Roboto,segoe ui,
+    Helvetica,Arial,sans-serif,
+    apple color emoji,segoe ui emoji,
+    segoe ui symbol; 
+    color: #4d4d4d;
+}
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.mobile-logo{
+    display: none;
+}
+.mobile-icons{
+    display: none;
+}
+nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#nav1{
+    padding: 10px;
+    border-bottom: 1px solid #d9d9d9;
+}
+#nav2{
+    box-shadow: 5px 4px 8px #d9d9d9;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    line-height: 90px;
+    padding: 0 10px;
+    line-height: 50px;
+}
+ul li a{
+    text-decoration: none;
+    color: #4d4d4d;
+    font-size: 14.1px;
+}
+li a:hover{
+    color: #00b3b3;
+}
+.search-bar{
+    border: 1px solid grey;
+    border-radius: 50px;
+    width: 500px;
+    height: 45px;
+    padding: 10px 15px;
+    line-height: 1px;
+}
+i{
+    color: grey;
+    cursor: pointer;
+}
+.icon{
+    font-size: 20px;
+}
+#search{
+    border: white;
+    width: 450px;
+    padding: 5px 15px;
+    outline: none;
+}
+.name{
+    width: 30px;
+    height: 30px;
+    background-color: #00cc44;
+    color: white;
+    border-radius: 90%;
+    display: flex;
+    align-items: center;
+    line-height: 31px;
+    padding: 3px;
+}
+.name h3{
+  font-size: 3px;
+  color: white !important;
+}
+.sec1{
+    background-image: url(img/sec1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+.insec-con{
+    width: 440px;
+    height: 157.2px;
+    margin: 60px 50px;
+    background-color: white;
+    box-shadow: 5px 3px 10px #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+.insec-con h1{
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: #404040;
+}
+.insec-con p{
+    font-size: 19px;
+    color: #4d4d4d;
+}
+.sec2{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    padding: 58px 30px;
+    flex-direction: column;
+}
+[sec2-con1] h1{
+    font-size: 32px;
+    color: #404040;
+    margin-bottom: 20px;
+}
+[sec2-con2]{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+[sec2-con2] h2{
+    font-size: 24px;
+    color: #404040;
+}
+[sec2-con2] p{
+    cursor: pointer;
+    font-size: 14px;
+    color: #0077b3;
+    line-height: 38px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+[sec2-con3]{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+[sec2-con3] h4{
+    width: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    height: 25px;
+    line-height: 14px;
+    text-align: center;
+    background-color: #00ff55;
+    color: #001a09;
+    font-size: 12px;
+}
+[sec2-con3] p{
+    line-height: 22px;
+    margin-left: 10px;
+    font-size: 11px;
+    color: #4d4d4d;
+    padding-bottom: 20px;
+}
+.card-con{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    width: 245.6px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 7px;
+}
+.course-tutor p{
+    font-size: 12px;
+}
+.burger{
+    cursor: pointer;
+    display: none;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+
+}
+@media screen and (max-width: 1300px) {
+    #nav1 [l2]{
+        display: none;
+    }
+}
+@media screen and (max-width: 1140px) {
+    #nav1 [l3]{
+        display: none;
+    }
+}
+@media screen and (max-width: 1100px) {
+    #nav2 [l10]{
+        display: none;
+    }
+    #nav2 [l9]{
+        display: none;
+    }
+    .search-bar{
+        width: 380px;
+    }
+    #search{
+        width: 300px;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    header{
+        width: 100%;
+        height: 58px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 5px 4px 10px #d9d9d9; 
+        padding: 0 20px;
+    }
+    .mobile-logo{
+        display: flex;
+    }
+    .mobile-icons{
+        display: flex;
+    }
+    #nav2 [l8]{
+        display: none;
+    }
+    #nav1{
+        display: none;
+    }
+    #nav2{
+        display: none;
+    }
+    .sec1{
+        height: 300px;
+        background-size: 100% 100%;
+    }
+    .card-con{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .burger{
+        display: block;
+    }
+}
+@media screen and (max-width: 800px) {
+    .insec-con{
+        display: none;
+    }
+}
